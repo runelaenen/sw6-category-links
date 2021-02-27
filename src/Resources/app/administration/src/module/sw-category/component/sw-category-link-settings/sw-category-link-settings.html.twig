@@ -1,0 +1,16 @@
+{% block sw_category_detail_link_field %}
+    <sw-switch-field v-model="category.customFields.rl_cl_isCategoryLink"
+                     :label="$tc('sw-category.link.is-category-link')"></sw-switch-field>
+
+    <template v-if="!category.customFields.rl_cl_isCategoryLink">
+        {% parent %}
+    </template>
+    <template v-else>
+        <sw-entity-single-select
+            entity="category"
+            v-model="category.customFields.rl_cl_categoryId"
+            :labelCallback="categoryLabel"
+            :label="$tc('sw-category.link.category')">
+        </sw-entity-single-select>
+    </template>
+{% endblock %}

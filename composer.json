@@ -1,0 +1,24 @@
+{
+    "name": "runelaenen/sw6-category-links",
+    "description": "Category links plugin for Shopware 6",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RuneLaenen\\CategoryLinks\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "RuneLaenen\\CategoryLinks\\RuneLaenenCategoryLinks",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "label": {
+            "de-DE": "Kategorie-Links-Plugin",
+            "en-GB": "Category links plugin",
+            "nl-NL": "Categorielink plugin",
+            "fr-FR": "Plugin de liens de catégorie"
+        }
+    },
+    "require-dev": {
+        "phpro/grumphp-shim": "^1.3"
+    }
+}

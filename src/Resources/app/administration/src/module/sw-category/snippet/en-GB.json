@@ -1,0 +1,8 @@
+{
+    "sw-category": {
+        "link": {
+            "category": "Category",
+            "is-category-link": "Is category link"
+        }
+    }
+}
