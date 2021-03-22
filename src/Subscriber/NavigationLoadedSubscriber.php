@@ -38,7 +38,7 @@ class NavigationLoadedSubscriber implements EventSubscriberInterface
         /** @var TreeItem $treeItem */
         foreach ($tree as $treeItem) {
             $category = $treeItem->getCategory();
-            $customFields = $category->getCustomFields() ?? [];
+            $customFields = $category->getTranslated()['customFields'] ?? [];
             if (array_key_exists('rl_cl_isCategoryLink', $customFields) && $customFields['rl_cl_isCategoryLink'] === '1') {
                 $categoryId = $customFields['rl_cl_categoryId'];
                 $url = $this->handler->generate('frontend.navigation.page', ['navigationId' => $categoryId]);
