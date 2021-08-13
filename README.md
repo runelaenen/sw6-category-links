@@ -9,7 +9,7 @@
 
 ![Category Links plugin for Shopware 6](https://user-images.githubusercontent.com/3930922/109384793-9529e600-78ef-11eb-9927-b0a89867e26f.png)
 
-~~~~~ END OF LIFE
+## END OF LIFE
 This functionality has been added to Shopware 6.4 so this plugin is not needed anymore.
 
 Link your categories automatically to another Shopware category. No more typo's in manually entered urls, no more URL changes, ...
